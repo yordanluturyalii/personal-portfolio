@@ -11,7 +11,7 @@ function SkillPage() {
     }
 
     return (
-        <div className="flex h-screen bg-black text-white overflow-hidden">
+        <div className="flex flex-col md:flex-row h-screen bg-black text-white overflow-hidden">
             <Sidebar />
             <main className="flex-1 p-4 relative overflow-hidden">
                 <h1 className="text-4xl lg:text-6xl font-bold mb-8">Skills</h1>

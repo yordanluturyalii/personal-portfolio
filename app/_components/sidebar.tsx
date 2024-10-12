@@ -7,7 +7,7 @@ export function Sidebar() {
             <div className="text-sm font-bold mb-8 hidden md:block">YRDN LTRYL</div>
             <ul className="flex flex-row md:flex-col space-x-4 md:space-x-0 md:space-y-8 justify-evenly">
                 <li className=""><Link href="/">Home</Link></li>
-                <li className=""><Link href="/skills">Skills</Link></li>
+                <li className=""><Link href="/skill">Skills</Link></li>
                 <li className=""><Link href="/projects">Projects</Link></li>
             </ul>
             <div className="hidden md:flex flex-col space-y-4 mt-auto">

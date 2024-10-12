@@ -37,7 +37,7 @@ export default function ProjectPage() {
   const [hoveredProject, setHoveredProject] = useState<number | null>(null)
 
   return (
-    <div className="flex bg-black text-white overflow-hidden">
+    <div className="flex flex-col md:flex-row bg-black text-white overflow-hidden">
       <Sidebar />
 
       {/* Main Content */}
