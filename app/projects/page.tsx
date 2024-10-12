@@ -25,11 +25,10 @@ const projects = [
     codeLink: 'https://github.com/yordanluturyalii/lms-learn-nextjs'
   },
   {
-    title: 'SiPreman Wolu',
-    description: 'Sistem untuk melakukan presensi di SMKN 8',
-    technologies: ['NextJs', 'MySQL', 'Laravel', 'PHP'],
-    status: 'In Progress',
-    codeLink: '#'
+    title: 'BeetleHR Lite API',
+    description: 'Project PKL membuat API untuk melakuakan presensi',
+    technologies: ['MySQL', 'Laravel', 'PHP'],
+    codeLink: 'https://gitlab.com/koding-works/beetlehr/beetlehr-lite-backend'
   }
 ]
 
@@ -61,7 +60,6 @@ export default function ProjectPage() {
                 ))}
               </div>
               <div className="flex justify-end space-x-4 items-center">
-                <span className='text-muted-foreground text-xs'>{project.status}</span>
                 <Link href={project.codeLink} className="text-cyan-400">
                   <Code className="w-5 h-5" />
                 </Link>
