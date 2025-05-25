@@ -1,8 +1,6 @@
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import "./globals.css";
-import Footer from "@/components/footer";
-import Navbar from "@/components/navbar";
 
 const poppinsSans = Poppins({
 	variable: "--font-geist-sans",
@@ -38,9 +36,7 @@ export default function RootLayout({
 	return (
 		<html lang="en">
 			<body className={`${poppinsSans.variable} antialiased`}>
-				<Navbar />
-				<main className="min-h-screen">{children}</main>
-				<Footer />
+				{children}
 			</body>
 		</html>
 	);
