@@ -2,6 +2,7 @@
 
 import { ArrowLeft, Home } from "lucide-react";
 import Link from "next/link";
+import { Button } from "@/components/ui/button";
 
 export default function NotFound() {
 	return (
@@ -13,7 +14,7 @@ export default function NotFound() {
 						Page Not Found
 					</h2>
 					<p className="text-gray-600 mb-8 max-w-md mx-auto">
-						Sorry, the page you are looking for doesn't exist or has been moved.
+						Sorry, the page you are looking for doesn&apos;t exist or has been moved.
 					</p>
 				</div>
 
@@ -25,13 +26,14 @@ export default function NotFound() {
 						<Home className="w-4 h-4 mr-2" />
 						Go Home
 					</Link>
-					<button
+					<Button
+					type="button"
 						onClick={() => window.history.back()}
 						className="inline-flex items-center border border-gray-300 text-gray-700 px-6 py-3 rounded-lg font-medium hover:bg-gray-50 transition-colors"
 					>
 						<ArrowLeft className="w-4 h-4 mr-2" />
 						Go Back
-					</button>
+					</Button>
 				</div>
 			</div>
 		</div>

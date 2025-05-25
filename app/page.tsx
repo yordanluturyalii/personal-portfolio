@@ -160,16 +160,16 @@ export default function Home() {
 			{/* Hero Section */}
 			<section className="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-50 via-white to-purple-50 relative overflow-hidden">
 				<div className="absolute inset-0 overflow-hidden">
-					<div className="absolute -top-40 -right-40 w-80 h-80 bg-blue-400 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-blob"></div>
-					<div className="absolute -bottom-40 -left-40 w-80 h-80 bg-purple-400 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-blob animation-delay-2000"></div>
-					<div className="absolute top-40 left-40 w-80 h-80 bg-pink-400 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-blob animation-delay-4000"></div>
+					<div className="absolute -top-40 -right-40 w-80 h-80 bg-blue-400 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-blob"/>
+					<div className="absolute -bottom-40 -left-40 w-80 h-80 bg-purple-400 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-blob animation-delay-2000"/>
+					<div className="absolute top-40 left-40 w-80 h-80 bg-pink-400 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-blob animation-delay-4000"/>
 				</div>
 
 				<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
 					<div className="space-y-8">
 						<div className="space-y-4">
 							<h1 className="text-5xl md:text-7xl font-bold text-gray-900 leading-tight">
-								Hi, I'm{" "}
+								Hi, I&apos;m{" "}
 								<span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
 									Yordan
 								</span>
@@ -250,22 +250,22 @@ export default function Home() {
 					<div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
 						<div className="space-y-6">
 							<p className="text-lg text-gray-700 leading-relaxed">
-								I'm a fresh graduate with over 2 years of hands-on experience in
+								I&apos;m a fresh graduate with over 2 years of hands-on experience in
 								developing and maintaining web applications using Laravel,
-								React, and Next.js. I've built and contributed to real-world
+								React, and Next.js. I&apos;ve built and contributed to real-world
 								projects such as the BeetleHR Lite API, AC service booking
 								dashboard, Eduleap LMS, and a badminton court reservation app.
 							</p>
 
 							<p className="text-lg text-gray-700 leading-relaxed">
-								I'm recognized for achievements in software development,
+								I&apos;m recognized for achievements in software development,
 								including 1st Place in the 2024 Semarang City Web Technologies
 								Competition (LKS) and 1st Place in the 2023 Techcompfest
 								National Web Design Competition.
 							</p>
 
 							<p className="text-lg text-gray-700 leading-relaxed">
-								I'm passionate about exploring new technologies and eager to
+								I&apos;m passionate about exploring new technologies and eager to
 								contribute in dynamic and collaborative startup or software
 								house environments.
 							</p>
@@ -377,7 +377,7 @@ export default function Home() {
 							Skills
 						</h2>
 						<p className="text-xl text-gray-600 max-w-3xl mx-auto">
-							Technologies and skills I've mastered throughout my journey
+							Technologies and skills I&apos;ve mastered throughout my journey
 						</p>
 					</div>
 
@@ -424,7 +424,7 @@ export default function Home() {
 							Get In Touch
 						</h2>
 						<p className="text-xl text-gray-600 max-w-3xl mx-auto">
-							Let's discuss opportunities and collaborate on exciting projects
+							Let&apos;s discuss opportunities and collaborate on exciting projects
 						</p>
 					</div>
 

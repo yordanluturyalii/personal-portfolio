@@ -1,7 +1,7 @@
-import type { Metadata } from "next"
 import { notFound } from "next/navigation"
 import Link from "next/link"
 import { Calendar, Clock, ArrowLeft, Share2, ArrowRight } from "lucide-react"
+import type { Metadata } from "next";
 
 // Mock data - dalam implementasi nyata, ini bisa dari CMS atau database
 const articles = {
@@ -171,7 +171,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   return {
     title: `${article.title} - Yordan Aserama Luturyali`,
-    description: article.content.substring(0, 160) + "...",
+    description:`${article.content.substring(0,160)}`,
   }
 }
 
@@ -227,7 +227,7 @@ export default function DetailArticlePage({ params }: Props) {
                 </div>
               </div>
 
-              <button className="flex items-center text-gray-500 hover:text-gray-700 transition-colors">
+              <button type="button" className="flex items-center text-gray-500 hover:text-gray-700 transition-colors">
                 <Share2 className="w-4 h-4 mr-1" />
                 Share
               </button>
@@ -245,7 +245,6 @@ export default function DetailArticlePage({ params }: Props) {
 
           <div
             className="prose prose-lg max-w-none prose-headings:text-gray-900 prose-p:text-gray-700 prose-li:text-gray-700"
-            dangerouslySetInnerHTML={{ __html: article.content }}
           />
         </article>
 
@@ -267,9 +266,10 @@ export default function DetailArticlePage({ params }: Props) {
               <div></div>
             )}
 
-            {nextArticle ? (
+            {
+            nextArticle && (
               <Link
-                href={`/articles/${nextArticle.slug}`}
+                href={`/articles/$nextArticle.slug`}
                 className="flex items-center text-gray-600 hover:text-blue-600 transition-colors group text-right"
               >
                 <div className="text-right">
@@ -278,9 +278,8 @@ export default function DetailArticlePage({ params }: Props) {
                 </div>
                 <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
               </Link>
-            ) : (
-              <div></div>
-            )}
+            )
+          }
           </div>
         </div>
 
@@ -292,7 +291,7 @@ export default function DetailArticlePage({ params }: Props) {
               {relatedArticles.map((relatedArticle) => (
                 <Link
                   key={relatedArticle.id}
-                  href={`/articles/${relatedArticle.slug}`}
+                  href={`/articles/$relatedArticle.slug`}
                   className="bg-gray-50 rounded-xl p-6 hover:bg-gray-100 transition-colors group"
                 >
                   <span className="inline-block px-2 py-1 text-xs font-medium text-blue-600 bg-blue-50 rounded-full mb-3">

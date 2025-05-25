@@ -3,6 +3,7 @@
 import { useState, useMemo } from "react"
 import Link from "next/link"
 import { Calendar, Clock, ArrowRight, Search, Filter, ChevronLeft, ChevronRight } from "lucide-react"
+import { Button } from "@/components/ui/button"
 
 // Mock data - dalam implementasi nyata, ini bisa dari CMS atau database
 const allArticles = [
@@ -99,7 +100,7 @@ const sortOptions = [
 
 const ARTICLES_PER_PAGE = 4
 
-export default function ArticlesClientPage() {
+export default function ArticlesPage() {
   const [searchTerm, setSearchTerm] = useState("")
   const [selectedCategory, setSelectedCategory] = useState("All")
   const [sortBy, setSortBy] = useState("newest")
@@ -138,16 +139,14 @@ export default function ArticlesClientPage() {
     return filtered
   }, [searchTerm, selectedCategory, sortBy])
 
-  // Pagination
   const totalPages = Math.ceil(filteredAndSortedArticles.length / ARTICLES_PER_PAGE)
   const startIndex = (currentPage - 1) * ARTICLES_PER_PAGE
   const endIndex = startIndex + ARTICLES_PER_PAGE
   const currentArticles = filteredAndSortedArticles.slice(startIndex, endIndex)
 
-  // Reset to first page when filters change
   useMemo(() => {
     setCurrentPage(1)
-  }, [searchTerm, selectedCategory, sortBy])
+  }, [])
 
   const handlePageChange = (page: number) => {
     setCurrentPage(page)
@@ -228,7 +227,7 @@ export default function ArticlesClientPage() {
               Showing {currentArticles.length} of {filteredAndSortedArticles.length} articles
               {searchTerm && (
                 <span className="ml-1">
-                  for "<span className="font-medium text-gray-900">{searchTerm}</span>"
+                  for &quot;<span className="font-medium text-gray-900">{searchTerm}</span>&quot;
                 </span>
               )}
             </p>
@@ -295,7 +294,7 @@ export default function ArticlesClientPage() {
             </div>
             <h3 className="text-xl font-semibold text-gray-900 mb-2">No articles found</h3>
             <p className="text-gray-600 mb-4">
-              Try adjusting your search terms or filters to find what you're looking for.
+              Try adjusting your search terms or filters to find what you&apos;re looking for.
             </p>
             <button
               onClick={() => {
@@ -324,7 +323,7 @@ export default function ArticlesClientPage() {
 
             <div className="flex space-x-1">
               {Array.from({ length: totalPages }, (_, i) => i + 1).map((page) => (
-                <button
+                <Button
                   key={page}
                   onClick={() => handlePageChange(page)}
                   className={`px-3 py-2 text-sm font-medium rounded-lg transition-colors ${
@@ -334,7 +333,7 @@ export default function ArticlesClientPage() {
                   }`}
                 >
                   {page}
-                </button>
+                </Button>
               ))}
             </div>
 
