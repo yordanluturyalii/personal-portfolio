@@ -16,6 +16,7 @@ import {
     Clock,
     Star,
 } from "lucide-react"
+import Image from "next/image"
 
 export default function ProjectPage() {
     const [activeFilter, setActiveFilter] = useState("All")
@@ -187,7 +188,7 @@ export default function ProjectPage() {
                 <div className="text-center mb-16">
                     <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">My Projects</h1>
                     <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                        A comprehensive showcase of projects I've built during my internships and personal development journey,
+                        A comprehensive showcase of projects I&apos;ve built during my internships and personal development journey,
                         featuring web applications, mobile apps, and AI-powered solutions.
                     </p>
                 </div>
@@ -246,7 +247,7 @@ export default function ProjectPage() {
                                 key={project.id}
                                 className="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-xl transition-all duration-300"
                             >
-                                <img
+                                <Image
                                     src={project.image || "/placeholder.svg"}
                                     alt={project.title}
                                     className="w-full h-64 object-cover"
@@ -346,7 +347,7 @@ export default function ProjectPage() {
                             >
                                 <div className="flex flex-col lg:flex-row gap-8">
                                     <div className="lg:w-1/3">
-                                        <img
+                                        <Image
                                             src={project.image || "/placeholder.svg"}
                                             alt={project.title}
                                             className="w-full h-48 lg:h-full object-cover rounded-xl"
