@@ -1,4 +1,4 @@
-import { date, json, pgTable, smallint, text, timestamp, uuid, varchar } from "drizzle-orm/pg-core";
+import { boolean, date, json, pgTable, smallint, text, timestamp, uuid, varchar } from "drizzle-orm/pg-core";
 
 export const projectCategories = pgTable('project_categories', {
     id: uuid('id').primaryKey().defaultRandom(),
@@ -29,6 +29,7 @@ export const articles = pgTable('articles', {
     date: date('date').notNull(),
     read_estimation: smallint('read_estimation').notNull(),
     content: text('content').notNull(),
+    is_published: boolean('is_published').notNull().$default(() => false),
 })
 
 export const activities = pgTable('activities', {

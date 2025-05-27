@@ -8,6 +8,13 @@
       "when": 1748260333838,
       "tag": "0000_common_scarlet_spider",
       "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1748342405063,
+      "tag": "0001_wooden_sunset_bain",
+      "breakpoints": true
     }
   ]
 }

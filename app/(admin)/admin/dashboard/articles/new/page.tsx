@@ -82,6 +82,7 @@ const CreateArticlePage = () => {
                                     <FormLabel className='text-lg'>Content</FormLabel>
                                     <FormControl data-color-mode='light'>
                                         <MDEditor
+                                            className="bg-white border-gray-700"
                                             value={field.value}
                                             onChange={(value) => field.onChange(value)}
                                         />
@@ -99,7 +100,7 @@ const CreateArticlePage = () => {
                                     <FormLabel className="text-lg w-full">Category</FormLabel>
                                     <FormControl className="w-full">
                                         <DropdownMenu>
-                                            <DropdownMenuTrigger asChild>
+                                            <DropdownMenuTrigger asChild className="bg-white border-gray-700">
                                                 <Button variant="outline" className="w-full justify-between">
                                                     {categories.find(cat => cat.id === field.value)?.name || "Select category"}
                                                     <ChevronDown className="h-4 w-4 opacity-50" />
