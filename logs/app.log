@@ -1,0 +1,81 @@
+2025-05-27 21:11:36 info: [object Object]
+2025-05-27 21:13:12 info: [object Object]
+2025-05-27 21:18:23 info: [object Object]
+2025-05-27 21:19:27 info: [object Object]
+2025-05-27 21:21:01 info: Data: {
+  category_id: 1,
+  title: 'halow',
+  read_estimation: '4',
+  content: 'halow',
+  is_published: true
+}
+2025-05-27 21:32:52 info: Data: {
+  category_id: 1,
+  title: 'halow',
+  read_estimation: 2,
+  content: 'haloww',
+  is_published: true
+}
+2025-05-27 21:32:53 error: invalid input syntax for type uuid: "1"
+error: invalid input syntax for type uuid: "1"
+    at C:\Users\yorda\Documents\Tahun 2025\projects\personal-web\node_modules\pg-pool\index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async C:\Users\yorda\Documents\Tahun 2025\projects\personal-web\.next\server\chunks\node_modules_drizzle-orm_8aaced._.js:7997:28
+    at async POST (C:\Users\yorda\Documents\Tahun 2025\projects\personal-web\.next\server\chunks\[root of the server]__bd2549._.js:325:25)
+    at async AppRouteRouteModule.do (C:\Users\yorda\Documents\Tahun 2025\projects\personal-web\node_modules\next\dist\compiled\next-server\app-route.runtime.dev.js:10:32847)
+    at async AppRouteRouteModule.handle (C:\Users\yorda\Documents\Tahun 2025\projects\personal-web\node_modules\next\dist\compiled\next-server\app-route.runtime.dev.js:10:39868)
+    at async doRender (C:\Users\yorda\Documents\Tahun 2025\projects\personal-web\node_modules\next\dist\server\base-server.js:1452:42)
+    at async responseGenerator (C:\Users\yorda\Documents\Tahun 2025\projects\personal-web\node_modules\next\dist\server\base-server.js:1822:28)
+    at async DevServer.renderToResponseWithComponentsImpl (C:\Users\yorda\Documents\Tahun 2025\projects\personal-web\node_modules\next\dist\server\base-server.js:1832:28)
+    at async DevServer.renderPageComponent (C:\Users\yorda\Documents\Tahun 2025\projects\personal-web\node_modules\next\dist\server\base-server.js:2257:24)
+    at async DevServer.renderToResponseImpl (C:\Users\yorda\Documents\Tahun 2025\projects\personal-web\node_modules\next\dist\server\base-server.js:2295:32)
+    at async DevServer.pipeImpl (C:\Users\yorda\Documents\Tahun 2025\projects\personal-web\node_modules\next\dist\server\base-server.js:959:25)
+    at async NextNodeServer.handleCatchallRenderRequest (C:\Users\yorda\Documents\Tahun 2025\projects\personal-web\node_modules\next\dist\server\next-server.js:281:17)
+    at async DevServer.handleRequestImpl (C:\Users\yorda\Documents\Tahun 2025\projects\personal-web\node_modules\next\dist\server\base-server.js:853:17)
+    at async C:\Users\yorda\Documents\Tahun 2025\projects\personal-web\node_modules\next\dist\server\dev\next-dev-server.js:371:20
+    at async Span.traceAsyncFn (C:\Users\yorda\Documents\Tahun 2025\projects\personal-web\node_modules\next\dist\trace\trace.js:153:20)
+    at async DevServer.handleRequest (C:\Users\yorda\Documents\Tahun 2025\projects\personal-web\node_modules\next\dist\server\dev\next-dev-server.js:368:24)
+    at async invokeRender (C:\Users\yorda\Documents\Tahun 2025\projects\personal-web\node_modules\next\dist\server\lib\router-server.js:230:21)
+    at async handleRequest (C:\Users\yorda\Documents\Tahun 2025\projects\personal-web\node_modules\next\dist\server\lib\router-server.js:408:24)
+    at async requestHandlerImpl (C:\Users\yorda\Documents\Tahun 2025\projects\personal-web\node_modules\next\dist\server\lib\router-server.js:432:13)
+    at async Server.requestListener (C:\Users\yorda\Documents\Tahun 2025\projects\personal-web\node_modules\next\dist\server\lib\start-server.js:146:132025-05-27 22:24:48 info: [object Object]
+2025-05-27 22:52:31 info: [object Object],[object Object],[object Object],[object Object],[object Object]
+2025-05-27 22:53:26 info: Data [
+  { name: 'Personal Development' },
+  { name: 'Web Development' },
+  { name: 'AI & Technologies' },
+  { name: 'Frontend Development' },
+  { name: 'Backend Development' },
+  [length]: 5
+]
+2025-05-27 22:54:15 info: Data [
+  {
+    id: 'd5740907-ef48-4d5f-8997-d68ad9308dc7',
+    name: 'Personal Development'
+  },
+  {
+    id: '227e89b7-65e3-46ae-bdea-693bd48e5cfe',
+    name: 'Web Development'
+  },
+  {
+    id: 'cbed2abd-9f2e-4cc7-9164-fff45b20b4fb',
+    name: 'AI & Technologies'
+  },
+  {
+    id: '86024f61-e10b-4c4c-a5d2-6ad4ab7393e8',
+    name: 'Frontend Development'
+  },
+  {
+    id: 'cc4635d0-5610-4910-ae02-d33773b14ac4',
+    name: 'Backend Development'
+  },
+  [length]: 5
+]
+2025-05-27 22:55:13 info: Data: {
+  category_id: '227e89b7-65e3-46ae-bdea-693bd48e5cfe',
+  title: 'halow',
+  read_estimation: 4,
+  content: 'halowww',
+  is_published: false
+}
+2025-05-27 22:55:13 info: [object Object]
