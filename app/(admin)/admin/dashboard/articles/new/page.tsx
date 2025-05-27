@@ -125,12 +125,20 @@ const CreateArticlePage = () => {
                         />
 
                         <div className="flex justify-end mt-6 pt-6 border-t">
-                            <Button
-                                type='submit'
-                                className='bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors'
-                            >
-                                Create Article
-                            </Button>
+                            <div className="flex gap-4">
+                                <Button
+                                    type='submit'
+                                    className='bg-gray-200 text-gray-800 px-6 py-2 rounded-lg hover:bg-gray-300 transition-colors'
+                                >
+                                    Save As Draft
+                                </Button>
+                                <Button
+                                    type='submit'
+                                    className='bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors'
+                                >
+                                    Publish Article
+                                </Button>
+                            </div>
                         </div>
                     </form>
                 </Form>
