@@ -87,3 +87,10 @@ error: invalid input syntax for type uuid: "1"
   content: 'halow',
   is_published: true
 }
+2025-05-29 13:11:54 info: Data: {
+  category_id: 'd5740907-ef48-4d5f-8997-d68ad9308dc7',
+  title: 'halow',
+  read_estimation: 3,
+  content: 'halow',
+  is_published: true
+}

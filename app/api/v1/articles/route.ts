@@ -24,9 +24,8 @@ export async function POST(request: NextRequest) {
             'message': 'success create article',
             'data': article,
             'error': null
-        }, { status: 200 });
+        }, { status: 201 });
     } catch(e) {
-        logger.error(e);
         return NextResponse.json({
             'message': 'failed create article',
             'data': null,
