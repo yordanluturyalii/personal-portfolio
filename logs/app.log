@@ -79,3 +79,11 @@ error: invalid input syntax for type uuid: "1"
   is_published: false
 }
 2025-05-27 22:55:13 info: [object Object]
+2025-05-29 13:04:10 info: [object Object]
+2025-05-29 13:04:54 info: Data: {
+  category_id: 'd5740907-ef48-4d5f-8997-d68ad9308dc7',
+  title: 'halow',
+  read_estimation: 2,
+  content: 'halow',
+  is_published: true
+}
